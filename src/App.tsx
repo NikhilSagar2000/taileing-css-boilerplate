@@ -1,5 +1,11 @@
 function App() {
-  return <h1 className="md:text-blue-300 lg:text-green-300">Hello World</h1>;
+  return (
+    <div>
+      <p className="text-primary-500">Primary text</p>
+      <p className="text-secondary-500">Secondary text</p>
+      <p className="text-tertiary-500">Tertiary text</p>
+    </div>
+  );
 }
 
 export default App;
