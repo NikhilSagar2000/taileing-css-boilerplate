@@ -1,11 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply font-Poppins;
-    }
+  html {
+    @apply font-Poppins;
+  }
+
+  /********** BUTTONS **********/
+
+  button {
+    @apply px-4 py-2 text-base rounded bg-primary-500 text-white transition-all duration-200 hover:bg-primary-600 active:scale-95 hover:shadow-md hover:shadow-primary-50;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600  hover:shadow-primary-50;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600  hover:shadow-secondary-50;
+  }
+
+  .btn-tertiary {
+    @apply bg-tertiary-500 hover:bg-tertiary-600  hover:shadow-tertiary-50;
+  }
+
+  .btn-primary-small {
+    @apply btn-primary text-sm;
+  }
+
+  .btn-primary-large {
+    @apply btn-primary text-lg;
+  }
+
+  .btn-secondary-small {
+    @apply btn-secondary text-sm;
+  }
+
+  .btn-secondary-large {
+    @apply btn-secondary text-lg;
+  }
+
+  .btn-tertiary-small {
+    @apply btn-tertiary text-sm;
+  }
+
+  .btn-tertiary-large {
+    @apply btn-tertiary text-lg;
+  }
+
+  /*****************************/
 }
