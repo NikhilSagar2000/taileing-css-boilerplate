@@ -11,6 +11,9 @@ module.exports = {
       xl: "1280px",
       "2xl": "1440px",
     },
+    fontFamily: {
+      Poppins: ["Poppins", "sans-serif"],
+    },
     extend: {
       colors: {
         primary: {
