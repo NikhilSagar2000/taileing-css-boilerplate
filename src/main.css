@@ -9,7 +9,63 @@
     @apply font-Poppins;
   }
 
+  /********* Typography ********/
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    @apply mx-0 font-bold block;
+  }
+
+  h1 {
+    @apply text-4xl my-4;
+  }
+
+  h2 {
+    @apply text-3xl my-3.5;
+  }
+
+  h3 {
+    @apply text-2xl my-3;
+  }
+
+  h4 {
+    @apply text-xl my-2.5;
+  }
+
+  h5 {
+    @apply text-lg my-2;
+  }
+
+  h6 {
+    @apply text-base my-1.5;
+  }
+
+  strong,
+  b {
+    @apply text-base my-1 inline;
+  }
+
+  p {
+    @apply font-normal text-base mx-0 my-2;
+  }
+
+  span {
+    @apply text-base m-0 inline;
+  }
+
+  /*****************************/
+
   /********** BUTTONS **********/
+
+  /* If you donot have a strict theme,
+     then you can remove the bg color and other classes to make it more generic. 
+     and add it to .btn class. */
 
   button {
     @apply px-4 py-2 text-base rounded bg-primary-500 text-white transition-all duration-200 hover:bg-primary-600 active:scale-95 hover:shadow-md hover:shadow-primary-50;
