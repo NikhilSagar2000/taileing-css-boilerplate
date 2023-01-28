@@ -9,7 +9,7 @@
     @apply font-Poppins;
   }
 
-  /********* Typography ********/
+  /********* TYPOGRAPHY ********/
 
   h1,
   h2,
@@ -68,7 +68,13 @@
      and add it to .btn class. */
 
   button {
-    @apply px-4 py-2 text-base rounded bg-primary-500 text-white transition-all duration-200 hover:bg-primary-600 active:scale-95 hover:shadow-md hover:shadow-primary-50;
+    @apply px-4 py-2 
+    text-base 
+    rounded 
+  bg-primary-500 hover:bg-primary-600 
+  text-white 
+    transition-all duration-200 active:scale-95 
+    hover:shadow-md hover:shadow-primary-50;
   }
 
   .btn-primary {
@@ -105,6 +111,39 @@
 
   .btn-tertiary-large {
     @apply btn-tertiary text-lg;
+  }
+
+  /*****************************/
+
+  /*********** INPUTS **********/
+
+  input {
+    @apply px-4 py-3
+    border-2 rounded-md border-primary-500 
+    outline-2 outline-primary-700;
+  }
+
+  input[type="file"] {
+    @apply cursor-pointer p-0 text-sm text-black
+    file:px-4 file:py-2.5
+    file:rounded-none file:border-0
+    file:text-sm file:font-medium
+    file:mr-4
+  file:bg-primary-500 file:text-white
+  hover:file:bg-primary-600
+  hover:file:text-white;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    @apply w-4 h-4
+  accent-primary-500 hover:accent-primary-500 
+    cursor-pointer;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none m-0;
   }
 
   /*****************************/

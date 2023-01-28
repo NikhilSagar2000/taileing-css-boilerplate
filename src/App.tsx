@@ -36,6 +36,13 @@ function App() {
         <button className="btn-tertiary">Tertiary Button</button>
         <button className="btn-tertiary-large">Tertiary Button</button>
       </div>
+      <div className="mt-4 flex flex-col gap-4 ">
+        <input type="text" placeholder="Enter text" />
+        <input type="number" placeholder="Enter Number" />
+        <input type="radio" />
+        <input type="checkbox" />
+        <input type="file" />
+      </div>
     </div>
   );
 }
